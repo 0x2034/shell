@@ -1,4 +1,4 @@
 @echo off
 python3 D:\sh.py 
-start /wait wscript.exe D:\del.bat
+powershell.exe -ExecutionPolicy Bypass -Command "Start-Process -FilePath 'wscript.exe' -ArgumentList 'D:\del.bat' -Wait"
 exit
