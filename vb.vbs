@@ -1,2 +1,2 @@
 Set objShell = WScript.CreateObject("WScript.Shell")
-objShell.Run "D:\pro.bat", 0, True
+objShell.Run "C:\Users\omar\Desktop\pro.bat", 0, True
