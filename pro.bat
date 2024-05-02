@@ -48,5 +48,6 @@ if not exist %FILE% (
     ) > %FILE%
 ) else (
    python3 %FILE%
+   timeout /t 20 >nul
 )
 goto loop
