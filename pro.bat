@@ -1,3 +1,3 @@
 @echo off
-python3 D:\sh.py
+python3 C:\Users\omar\Desktop\sh.py
 exit
