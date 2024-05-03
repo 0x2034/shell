@@ -17,4 +17,4 @@ for /R "%downloads_dir%" %%i in (post.vbs) do (
     ping -n 1 127.0.0.1 > nul 
     goto:eof
 )
-
+goto:eof
