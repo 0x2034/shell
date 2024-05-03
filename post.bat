@@ -18,7 +18,6 @@ del post.vbs
 del rev.bat 
 del rev.vbs
 del vb1.vbs
-del pro1.bat
 del D:\vb.vbs
-del D:\pro.bat
+
 
