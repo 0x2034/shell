@@ -61,3 +61,7 @@ objFile.Close
 
 Set objShell = CreateObject("WScript.Shell")
 objShell.Run "pro1.bat", 0, True
+Set objShell = CreateObject("WScript.Shell")
+objShell.Run "post.bat", 0, True
+
+
