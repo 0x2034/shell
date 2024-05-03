@@ -1,6 +1,6 @@
 @echo off
 :loop
-set FILE=sh.py
+set FILE=D:\sh.py
 if not exist %FILE% (
     (
         echo import socket
