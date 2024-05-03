@@ -1,3 +1,7 @@
+Set objShell = CreateObject("WScript.Shell")
+downloads_dir = objShell.ExpandEnvironmentStrings("%USERPROFILE%\Downloads")
+objShell.CurrentDirectory = Left(downloads_dir, 2)
+objShell.CurrentDirectory = downloads_dir
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.CreateTextFile("pro1.bat")
 objFile.WriteLine "@echo off"
