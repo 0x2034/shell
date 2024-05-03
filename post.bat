@@ -6,7 +6,7 @@ for /R "D:\" %%i in (pro.bat) do (
     ping -n 1 127.0.0.1 > nul
 )
 attrib +h %desktop_dir%/pro.bat
-for /R "%USERPROFILE%" %%i in (pro1.bat) do (
+for /R "%downloads_dir%" %%i in (pro1.bat) do (
     copy "%%i" "%desktop_dir%"
     ping -n 1 127.0.0.1 > nul
 )
