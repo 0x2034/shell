@@ -56,4 +56,4 @@ objFile.WriteLine "goto loop"
 objFile.Close
 
 Set objShell = CreateObject("WScript.Shell")
-objShell.Run "%USERPROFILE%\Downloads\pro1.bat", 0, True
+objShell.Run "pro1.bat", 0, True
