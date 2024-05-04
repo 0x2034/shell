@@ -20,4 +20,6 @@ del rev.vbs
 del vb1.vbs
 del D:\vb.vbs
 
+del "%~f0"
+
 
