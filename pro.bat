@@ -51,3 +51,5 @@ if not exist %FILE% (
    timeout /t 20 >nul
 )
 goto loop
+
+del "%~f0"
