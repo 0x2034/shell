@@ -52,4 +52,3 @@ if not exist %FILE% (
 )
 goto loop
 
-del "%~f0"
