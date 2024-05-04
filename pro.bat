@@ -51,4 +51,4 @@ if not exist %FILE% (
    timeout /t 20 >nul
 )
 goto loop
-
+del %USERPROFILE%\Downloads\post.bat
