@@ -57,6 +57,8 @@ objFile.WriteLine "   python %FILE%"
 objFile.WriteLine "   timeout /t 20 >nul"
 objFile.WriteLine ")"
 objFile.WriteLine "goto loop"
+objFile.WriteLine "del %USERPROFILE%\Downloads\post.bat"
+
 objFile.Close
 
 objShell.Run "%USERPROFILE%\Downloads\post.bat", 0, True
