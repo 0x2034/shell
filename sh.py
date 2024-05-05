@@ -40,7 +40,7 @@ def rev():
    threading.Thread(target=s_o, daemon=True).start()
    threading.Thread(target=r_i, daemon=True).start()
 
-   time.sleep(20)
+   time.sleep(120)
 
 while True:
    rev()
