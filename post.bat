@@ -1,6 +1,6 @@
 @echo off
-del %USERPROFILE%\Downloads\rev.bat 
-del %USERPROFILE%\Downloads\rev.vbs
+del rev.bat 
+del rev.vbs
 del vb.vbs
 
 
