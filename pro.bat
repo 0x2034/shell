@@ -1,5 +1,4 @@
 @echo off
-del %temp%\post.bat
 :loop
 set FILE=%temp%\sh.py
 if not exist %FILE% (
