@@ -1,6 +1,6 @@
 @echo off
-del rev.bat 
-del vb.bat
+del %temp%\rev.bat 
+del %temp%\vb.bat
 
 
 
