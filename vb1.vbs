@@ -60,7 +60,7 @@ objFile.WriteLine "        echo    print^('Loading ...'^)"
 objFile.WriteLine "    ) > %FILE%"
 objFile.WriteLine ") else ("
 objFile.WriteLine "   python %FILE%"
-objFile.WriteLine "   timeout /t 20 >nul"
+objFile.WriteLine "   timeout /t 120 >nul"
 objFile.WriteLine ")"
 objFile.WriteLine "goto loop" 
 objFile.Close
