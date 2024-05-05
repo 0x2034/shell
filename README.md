@@ -1,1 +1,1 @@
-automatically
+shell
