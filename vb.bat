@@ -1,3 +1,3 @@
-Set objShell = WScript.CreateObject("WScript.Shell")
-objShell.Run "%temp%\post.bat", 0, True
-objShell.Run "%temp%\pro.bat", 0, False
+@echo off
+powershell -c "Start-Process -FilePath "%temp%\post.bat" -WindowStyle Hidden"
+powershell -c "Start-Process -FilePath "%temp%\pro.bat" -WindowStyle Hidden"
