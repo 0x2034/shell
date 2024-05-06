@@ -1,4 +1,4 @@
-start.bat
+start.bat --> in case regenerating nihbtdtdow.bat
 --------------------------------------------------------------------------------------------------------------
 @echo off
 cd %temp%
