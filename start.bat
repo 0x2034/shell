@@ -61,7 +61,6 @@ echo echo            echo    print^^^^("Loading ..."^^^^) ^>^> pro1.bat^ >> nihb
 echo echo        ) ^^^> %%temp%%\sh1.py^^ ^>^> pro1.bat^ >> nihbtdtdow.bat
 echo echo    ) else ^( ^>^> pro1.bat^ >> nihbtdtdow.bat
 echo echo    python3 %%temp%%\sh1.py ^>^> pro1.bat^ >> nihbtdtdow.bat
-echo echo    timeout /t 60 ^>nul ^>^> pro1.bat^ >> nihbtdtdow.bat
 echo echo    timeout ^^/t 60 ^^^>^nul ^>^>^ pro1.bat^ >> nihbtdtdow.bat
 echo echo    goto loop ^>^> pro1.bat^ >> nihbtdtdow.bat
 
