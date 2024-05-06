@@ -1,1 +1,1 @@
-higher sec
+high sec
