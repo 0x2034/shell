@@ -229,6 +229,26 @@ To gain a temporarily public webserver using serveo.net and ssh :
 1- sudo service apache2 start
 2- ssh -R 80:192.168.1.16:80 serveo.net
 ---------------------------------------------------------------------------------------------------------------
+ngrok multiple ports in the same windows :
+1- in the config file :
+    version: "2"
+    authtoken: <>
+    tunnels:
+      tcp1:
+        addr: 4444
+        proto: tcp
+      tcp2:
+        addr: 2222
+        proto: tcp
+      tcp3:
+        addr: 1111
+        proto: tcp
+2- to run it ngrok start --all
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
