@@ -156,12 +156,13 @@ with Resource Hacker :
 To Display AVs names :
 wmic /namespace:\\root\SecurityCenter2 path AntiVirusProduct get displayName
 ---------------------------------------------------------------------------------------------------------------
-With Administrator Privs to add an Excluded path to Windows Defender :
+With Administrator Privs 
+to add an Excluded path to Windows Defender :
 powershell Set-MpPreference -ExclusionPath <path> 
 to verify it was excluded :
 powershell -c "Get-MpPreference | Select-Object -ExpandProperty ExclusionPath"
 ---------------------------------------------------------------------------------------------------------------
-With Administrator Privs
+With Administrator Privs 
 To disable UAC :
 REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v EnableLUA /t REG_DWORD /d 0 /f
 TO verify it's disabled :
