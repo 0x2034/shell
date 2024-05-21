@@ -231,6 +231,7 @@ To gain a temporarily public webserver using serveo.net and ssh :
 ---------------------------------------------------------------------------------------------------------------
 ngrok multiple ports in the same windows :
 1- in the config file :
+sudo nano /home/<os>/.config/ngrok/ngrok.yml
     version: "2"
     authtoken: <>
     tunnels:
@@ -241,7 +242,7 @@ ngrok multiple ports in the same windows :
         addr: 2222
         proto: tcp
       tcp3:
-        addr: 1111
+        addr: 22
         proto: tcp
 2- to run it ngrok start --all
 ---------------------------------------------------------------------------------------------------------------
