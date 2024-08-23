@@ -163,7 +163,7 @@ with Resource Hacker :
 To Display AVs names :
 wmic /namespace:\\root\SecurityCenter2 path AntiVirusProduct get displayName
 ---------------------------------------------------------------------------------------------------------------
-With Administrator Privs 
+With Administrator Privs  
 to add an Excluded path to Windows Defender :
 powershell Set-MpPreference -ExclusionPath <path> 
 to verify it was excluded :
